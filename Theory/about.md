@@ -27,7 +27,7 @@ This Theory section serves as a comprehensive guide to all the essential concept
 
 3. Each theory document contains explanations, code snippets, and relevant references to external resources.
 
-4. Don't forget to practice your knowledge through hands-on projects in the [Projects](../projects) folder.
+4. Don't forget to practice your knowledge through hands-on projects in the [Projects](../Practical) folder.
 
 ## Feedback and Contributions
 
