@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = xylo
+PRODUCT_NAME = Xylo Player;
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.xylo
+PRODUCT_BUNDLE_IDENTIFIER = com.techninja01.xyloplayer;
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2023 com.example. All rights reserved.

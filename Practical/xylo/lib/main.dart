@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -50,94 +51,137 @@ class MyApp extends StatelessWidget {
                   end: Alignment.bottomRight,
                 ),
               ),
-              child: const Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Cards(
-                    // Violet
-                    startColor: Color.fromARGB(255, 118, 142, 204),
-                    endColor: Color.fromARGB(255, 93, 230, 222),
-                    noteNumber: 1,
-                  ),
-                  SizedBox(
-                    width: double.infinity,
-                    child: Divider(
-                      color: Colors.white,
-                      thickness: 1,
+              child: Container(
+                margin: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+                child: ListView(
+                  children: [
+                    Card(
+                      elevation: 20,
+                      color: Colors.transparent,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const ListTile(
+                        leading: Icon(
+                          Icons.info_outline,
+                          color: Colors.white,
+                        ),
+                        title: Text(
+                          'Tap on the notes to play the sound',
+                        ),
+                      ),
                     ),
-                  ),
-                  Cards(
-                    // Indigo
-                    startColor: Color.fromARGB(255, 95, 10, 135),
-                    endColor: Color.fromARGB(255, 164, 80, 139),
-                    noteNumber: 2,
-                  ),
-                  SizedBox(
-                    width: double.infinity,
-                    child: Divider(
-                      color: Colors.white,
-                      thickness: 1,
+                    const SizedBox(
+                      width: double.infinity,
+                      child: Divider(
+                        color: Colors.red,
+                        thickness: 1,
+                      ),
                     ),
-                  ),
-                  Cards(
-                    // Blue
-                    startColor: Color.fromARGB(255, 0, 159, 253),
-                    endColor: Color.fromARGB(255, 42, 42, 114),
-                    noteNumber: 3,
-                  ),
-                  SizedBox(
-                    width: double.infinity,
-                    child: Divider(
-                      color: Colors.white,
-                      thickness: 1,
+                    const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Cards(
+                          // Violet
+                          startColor: Color.fromARGB(255, 118, 142, 204),
+                          endColor: Color.fromARGB(255, 93, 230, 222),
+                          noteNumber: 1,
+                        ),
+                        SizedBox(
+                          width: double.infinity,
+                          child: Divider(
+                            color: Colors.white,
+                            thickness: 1,
+                          ),
+                        ),
+                        Cards(
+                          // Indigo
+                          startColor: Color.fromARGB(255, 95, 10, 135),
+                          endColor: Color.fromARGB(255, 164, 80, 139),
+                          noteNumber: 2,
+                        ),
+                        SizedBox(
+                          width: double.infinity,
+                          child: Divider(
+                            color: Colors.white,
+                            thickness: 1,
+                          ),
+                        ),
+                        Cards(
+                          // Blue
+                          startColor: Color.fromARGB(255, 0, 159, 253),
+                          endColor: Color.fromARGB(255, 42, 42, 114),
+                          noteNumber: 3,
+                        ),
+                        SizedBox(
+                          width: double.infinity,
+                          child: Divider(
+                            color: Colors.white,
+                            thickness: 1,
+                          ),
+                        ),
+                        Cards(
+                          // Green
+                          startColor: Color.fromARGB(255, 128, 255, 114),
+                          endColor: Color.fromARGB(255, 126, 232, 250),
+                          noteNumber: 4,
+                        ),
+                        SizedBox(
+                          width: double.infinity,
+                          child: Divider(
+                            color: Colors.white,
+                            thickness: 1,
+                          ),
+                        ),
+                        Cards(
+                          // Yellow
+                          startColor: Color.fromARGB(255, 249, 217, 118),
+                          endColor: Color.fromARGB(255, 243, 159, 134),
+                          noteNumber: 5,
+                        ),
+                        SizedBox(
+                          width: double.infinity,
+                          child: Divider(
+                            color: Colors.white,
+                            thickness: 1,
+                          ),
+                        ),
+                        Cards(
+                          // Orange
+                          startColor: Color.fromARGB(255, 236, 159, 5),
+                          endColor: Color.fromARGB(255, 255, 78, 0),
+                          noteNumber: 6,
+                        ),
+                        SizedBox(
+                          width: double.infinity,
+                          child: Divider(
+                            color: Colors.white,
+                            thickness: 1,
+                          ),
+                        ),
+                        Cards(
+                          // Red
+                          startColor: Color.fromARGB(255, 254, 95, 117),
+                          endColor: Color.fromARGB(255, 252, 152, 66),
+                          noteNumber: 7,
+                        ),
+                        SizedBox(
+                          width: double.infinity,
+                          child: Divider(
+                            color: Colors.white,
+                            thickness: 1,
+                          ),
+                        ),
+                        Cards(
+                          // Last
+                          startColor: Color.fromARGB(255, 9, 198, 249),
+                          endColor: Color.fromARGB(255, 4, 93, 233),
+                          noteNumber: 8,
+                        ),
+                      ],
                     ),
-                  ),
-                  Cards(
-                    // Green
-                    startColor: Color.fromARGB(255, 128, 255, 114),
-                    endColor: Color.fromARGB(255, 126, 232, 250),
-                    noteNumber: 4,
-                  ),
-                  SizedBox(
-                    width: double.infinity,
-                    child: Divider(
-                      color: Colors.white,
-                      thickness: 1,
-                    ),
-                  ),
-                  Cards(
-                    // Yellow
-                    startColor: Color.fromARGB(255, 249, 217, 118),
-                    endColor: Color.fromARGB(255, 243, 159, 134),
-                    noteNumber: 5,
-                  ),
-                  SizedBox(
-                    width: double.infinity,
-                    child: Divider(
-                      color: Colors.white,
-                      thickness: 1,
-                    ),
-                  ),
-                  Cards(
-                    // Orange
-                    startColor: Color.fromARGB(255, 236, 159, 5),
-                    endColor: Color.fromARGB(255, 255, 78, 0),
-                    noteNumber: 6,
-                  ),
-                  SizedBox(
-                    width: double.infinity,
-                    child: Divider(
-                      color: Colors.white,
-                      thickness: 1,
-                    ),
-                  ),
-                  Cards(
-                    // Red
-                    startColor: Color.fromARGB(255, 254, 95, 117),
-                    endColor: Color.fromARGB(255, 252, 152, 66),
-                    noteNumber: 7,
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
@@ -208,22 +252,50 @@ class InnerContainer extends StatelessWidget {
 class AnElevatedButton extends StatelessWidget {
   final int noteNumber;
   const AnElevatedButton({super.key, required this.noteNumber});
-
   @override
   Widget build(BuildContext context) {
+    List noteName = [
+      'C - Do - Sa',
+      'D - Re - Re',
+      'E - Mi - Ga',
+      'F - Fa - Ma',
+      'G - So - Pa',
+      'A - La - Dha',
+      'B - Ti - Ni',
+      'C - Do - Sa'
+    ];
+    var note = noteName.elementAt(noteNumber - 1);
     return ElevatedButton(
       onPressed: () {
         AssetsAudioPlayer.newPlayer().open(
           Audio("assets/note$noteNumber.wav"),
         );
       },
-      child: null,
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(Colors.transparent),
         elevation: MaterialStateProperty.all(20),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      ),
+      child: Card(
+        elevation: 30,
+        color: Colors.transparent,
+        child: ListTile(
+          leading: const Icon(
+            Icons.music_note_outlined,
+            color: Colors.white,
+          ),
+          title: Center(
+            child: Text(
+              '$note',
+              style: GoogleFonts.kalam(
+                fontSize: 20,
+                color: Colors.white,
+              ),
+            ),
           ),
         ),
       ),
